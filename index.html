@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vue Todo App - Matthew Pittman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+
+        <div id="app1">
+            <input v-model="todoIn" placeholder="Enter Todo">
+            <button v-on:click="add">+</button><br><br>
+            <button v-on:click="clear">Clear all Todos</button>
+
+            <ol>
+                <todo-item
+                    v-for="item in todos"
+                    v-bind:todo="item"
+                ></todo-item>
+            </ol>
+        </div>
+        
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>

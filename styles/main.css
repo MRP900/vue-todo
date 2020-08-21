@@ -1,0 +1,16 @@
+#addBtn {
+    margin-left: .5em;
+}
+
+li {
+    margin: .5em;
+}
+
+.todoBtn {
+    border: 0px;
+    background-color: transparent;
+}
+
+.leftBtn {
+    margin-left: 1em;
+}
